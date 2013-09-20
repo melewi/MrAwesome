@@ -1,7 +1,7 @@
 body{
     font-family: helvetica;
     margin: 0px;
-}
+    }
 
 a:link{
     font-family: 'Montserrat' sans-serif;
@@ -9,29 +9,29 @@ a:link{
     font-size: 11px;
     font-weight: 700 !important;
     text-decoration: none !important;
-}
+    }
 
 a:hover{
     color: #000;
     text-decoration: none !important;
-}
+    }
 
 a:active{
     color: #000 !important;
     text-decoration: none !important;
-}
+    }
 
 a:visited{
     color: #196457 !important;
     text-decoration: none !important;
-}   
+    }   
 
 h1{
     font-family: 'Montserrat' sans-serif;
     color: #FFF;
     font-size: 5em;
     text-align: center;
-}
+    }
 
 h2{
     font-family: 'Jacques Francois';
@@ -40,7 +40,7 @@ h2{
     font-size: 2em;
     text-align: center;
     line-height: 150%;
-}
+    }
 
 h3{
     font-family: 'Jacques Francois';
@@ -48,7 +48,7 @@ h3{
     font-size: 1.85em;
     text-align: center;
     line-height: 75%;
-}
+    }
 
 h4{
     font-family: 'helvetica';
@@ -57,7 +57,7 @@ h4{
     font-size: 0.9em;
     text-align: center;
     line-height: 225%;
-}
+    }
 
 
 .nav{
@@ -66,13 +66,13 @@ h4{
     margin-right: auto;
     padding-bottom: 5.5%;
     margin-left: auto;
-}
+    }
 
 .nav li{
     display: inline;
     padding-right: 3%;
     padding-left: 3%;
-}
+    }
 
 
 #logo{
@@ -80,13 +80,13 @@ h4{
     margin-right: auto;
     margin-bottom: 5%;
     margin-left: auto;
-}
+    }
 
 .subintro{
     width: 55%;
     margin-right: auto;
     margin-left: auto;
-}
+    }
 
 
 .button-big{
@@ -104,13 +104,13 @@ h4{
     left: 50%;
     margin-left: -125px;
     margin-top: 2.5%;
-}
+    }
 
 .button-big:hover{
     border: solid 3px #196457;
     color: #FFF;
     background-color: #196457;
-}
+    }
 
 
 .button-big2{
@@ -125,13 +125,13 @@ h4{
     text-transform: uppercase;
     color: #FFF;
     margin-top: 2.5%;
-}
+    }
 
 .button-big2:hover{
     border: solid 3px #273a62;
     background-color: #273a62;
     color: #FFF;
-}
+    }
 
 
 .button-big3{
@@ -146,80 +146,137 @@ h4{
     text-transform: uppercase;
     color: #999;
     margin-top: 2.5%;
-}
+    }
 
 .button-big3:hover{
     border: solid 3px #000;
     background-color: #000;
     color: #999;
-}
+    }
 
 
 .header-wrapper{
     height: 95%;
     background-color: #38b7a1;
-}
+    }
 
 
 .intro-text-wrapper{
     height: 70%;
     background-color: #196457;
     text-align: center;
-}
+    }
 
 .intro-text{
     width: 90%;
     height: 100%;
     margin-right: auto;
     margin-left: auto;
-}
+    }
 
 #intro-text1{
     float: left;
     width: 23%;
     padding: 5%;
-}
+    }
 
 #intro-text2{
     float: left;
     width: 23%;
     padding: 5%;
-}
+    }
 
 #intro-text3{
     float: left;
     width: 23%;
     padding: 5%;
-}
+    }
 
 .gallery-wrapper{
-    height: 104%;
+    height: 110%;
     padding-top: 5%;
     background-color: #333;
-}
+    }
 
 .galleryitem{
-    width: 25%;
+    width: 20%;
+    border-radius: 50%;
+    margin: 1.5%;
+    padding: 1%;
     float: left;
-}
+    }
 
 .galleryitem:hover{
-    width: 25%;
-    float: left;
-    background-color: #000;
-}
+    background: rgba(255, 255, 255, .2);
+    }
+
+
+
+
+
+
+
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    }
+
+.modalDialog:target{
+    opacity:1;
+    pointer-events: auto;
+    }
+
+.modalDialog > div {
+    width: 600px;
+    position: relative;
+    margin: 3% auto;
+    padding: 5px 30px 13px 20px;
+    border-radius: 5px;
+    background: #FFF;
+    }
+
+
+.galleryitem-big{
+    width: 75%;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 1%;
+    left: 12.5%;
+    }
+
+.close{
+    text-align: right;
+    position: relative;
+    margin-left: -2%;
+    margin-top: 2%;
+    left: 100%;
+    }
+
+
+
+
 
 .contact-wrapper{
     height: 95%;
     padding-top: 5%;
     background-color: #3b5997;
-}
+    }
 
 .fieldbox-wrapper{
-    width: 55%;
+    width: 54%;
     margin-right: auto;
     margin-left: auto;
-}
+    }
 
 .fieldbox{
     height: 48px;
@@ -230,7 +287,7 @@ h4{
     border-radius: 3px;
     border-style: none;
     margin: .5%;
-}
+    }
 
 #fieldbox2{
     height: 256px;
@@ -241,36 +298,36 @@ h4{
     border-radius: 3px;
     border-style: none;
     margin: .5%;
-}
+    }
 
 .footer-wrapper{
     height: 50%;
     padding-top: 5%;
     background-color: #333;
-}
+    }
 
 .footer-wrapper2{
     width: 35%;
     margin-right: auto;
     margin-left: auto;
-}
+    }
 
 #text-teal{
     color: #38b7a1;
-}
+    }
 
 #text-blue{
     color: #273a62;
-}
+    }
 
 #text-white{
     color: #FFF;
-}
+    }
 
 #text-black{
     color: #999;
     line-height: 150%;
-}
+    }
 
 .bye-background{
     background-color: #000;
@@ -280,40 +337,13 @@ h4{
     padding-top: 200px;
     height: 75%;
     margin: 0px;
-}
+    }
 
-a{
-    -webkit-transition: all 2s;
-    transition: all 2s;
-    transition-property: all;
-    transition-duration: 0.2s;
-    transition-timing-function: initial;
-    transition-delay: initial;
-}
-
-/*
-a[ id= "home" ]:target ~ a#home {
-    -webkit-transform: translateY( 0px);
-    transform: translateY( 0px );
-}
-
-a[ id= "find" ]:target ~ a#find {
-    -webkit-transform: translateY( -500px );
-    transform: translateY( -500px );
-}
-
-a[ id= "gallery" ]:target ~ a# {
-    -webkit-transform: translateY( -1000px );
-    transform: translateY( -1000px );
-}
-
-a[ id= "contact" ]:target ~ a# {
-    -webkit-transform: translateY( -1500px );
-    transform: translateY( -1500px );
-}
-*/
+#gallery{
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    }
 
 
 
-
-*/
